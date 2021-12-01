@@ -9,3 +9,4 @@ print(10/2)
 print(5*3)
 print(1.5*3)
 
+git push -u origin --all
