@@ -40,6 +40,7 @@ d2 = {}
 def generate_dict(number):
     d= {}
     for i in range(1,number+1):
-        d[i] = (i ** 2,i ** 2,i ** 2)
+        d[i] = (i ** 2)
     return d
 print(generate_dict(10))
+
