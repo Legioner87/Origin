@@ -1,0 +1,2 @@
+﻿pydantic==1.8.2
+typing-extensions==4.0.1

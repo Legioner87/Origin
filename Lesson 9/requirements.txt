@@ -1,0 +1,12 @@
+﻿falcon==3.0.1
+gunicorn==20.1.0
+pydantic==1.8.2
+typing-extensions==4.0.1
+web: waitress-serve \
+    --listen "*:$PORT" \
+    --trusted-proxy '*' \
+    --trusted-proxy-headers 'x-forwarded-for x-forwarded-proto x-forwarded-port' \
+    --log-untrusted-proxy-headers \
+    --clear-untrusted-proxy-headers \
+    --threads ${WEB_CONCURRENCY:-4} \
+    myapp:wsgifunc
